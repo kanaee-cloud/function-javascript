@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/forin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Yesteryear&display=swap" rel="stylesheet">    
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+    <div class="content">
+        <h2>Pengulangan For pada Javascript</h2>
+            <p>Mengulang melalui properti pada objek</p>
+            <p id="forInLoop">
+                
+            </p>
+        </div>
+    </section>
+    <script>
+        var txt = "Contoh : ";
+        var orang = { 
+            fname:"Ewok", 
+            lname:"Suri", 
+            usia: 16 }
+            ;
+        var x;
+        for ( x in orang){
+            txt += orang[x] + " ";
+        }
+        document.getElementById("forInLoop").innerHTML = txt;
+    </script>
+</body>
+</html>

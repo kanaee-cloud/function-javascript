@@ -1,0 +1,27 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #313866;
+}
+
+.container{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    text-align: center;
+    color: #FE7BE5;
+    padding: 30px;
+    font-size: 30px;
+    transition: all .50s ease-in;
+}
+
+.content:hover{
+    transform: scale(1.2);
+    background-color: #504099;
+    border: 2px solid #EC53B0;
+    border-radius: 30px;
+}

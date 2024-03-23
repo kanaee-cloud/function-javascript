@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/function.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="content">
+            <h2>Change Background Color</h2>
+            <button onclick="changeBackgroundColor()">Change Color</button>
+        </div>
+    </section>
+    <script>
+        function changeBackgroundColor() {
+            var colors = ["#000000", "#0E21A0", "#4D2DB7", "#9D44C0","#EC53B0"];
+            var body = document.body; 
+            var currentColor = body.style.backgroundColor;
+            var randomColor;
+
+            do {
+                randomColor = colors[Math.floor(Math.random() * colors.length)];
+            } while (randomColor === currentColor);
+
+            body.style.backgroundColor = randomColor;
+
+            var fontColors = ["#313866", "#000", "#504099", "#974EC3", "#FE7BE5"];
+            var currentFontColor = body.style.color;
+            var randomFontColor;
+
+            do {
+                randomFontColor = fontColors[Math.floor(Math.random() * fontColors.length)];
+            } while (randomFontColor === currentFontColor);
+
+            body.style.color = randomFontColor;
+        }
+    </script>
+</body>
+</html>

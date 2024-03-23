@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.container{
+    padding: 100px;
+}
+
+.content{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+   background-color: #2E3840;
+   padding: 40px;
+   color: #fff;
+   border-radius: 10px;
+   transition: all .50s ease;
+}
+
+.card:hover{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transform: scale(1.5);  
+}
